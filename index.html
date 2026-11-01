@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORCİK | Geleneksel Elazığ Orciki, Şavak Tulumu & Yöresel Gurme Lezzetler</title>
+  <meta name="description" content="ORCİK, hakiki Elazığ cevizli sucuğunu, Şavak tulum peynirini, güneşte kurutulmuş dut pestilini ve yayla balını soğuk zincir güvencesiyle kapınıza ulaştırır.">
+  <meta name="keywords" content="orcik, elazığ orciki, cevizli sucuk, şavak tulum peyniri, dut pestili, köme, ağın leblebisi, harput lezzetleri">
+  
+  <!-- Favicon using brand gold star -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23c5ab78'><polygon points='12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2'/></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css?v=orcik6">
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. TOP ANNOUNCEMENT TICKER
+       ======================================================================== -->
+  <div class="announcement-bar" id="announcementBar" role="region" aria-label="Duyurular">
+    <div class="ticker-track">
+      <div class="ticker-item">
+        <span class="ticker-icon">✦</span>
+        <span>2.000 TL ve üzeri alışverişlerinizde Özel Strafor Koruma & Buz Aküsü ücretsiz!</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-icon">✦</span>
+        <span>1.500 TL ve üzeri siparişlerde kargo ücretsiz!</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-icon">✦</span>
+        <span>Tüm siparişler Elazığ Harput merkez mağazamızdan taze ve özenli ambalajla gönderilmektedir</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-icon">✦</span>
+        <span>2.000 TL ve üzeri alışverişlerinizde Özel Strafor Koruma & Buz Aküsü ücretsiz!</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-icon">✦</span>
+        <span>1.500 TL ve üzeri siparişlerde kargo ücretsiz!</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       2. SITE HEADER & NAVIGATION
+       ======================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <div class="header-top">
+        <div class="header-left">
+          <button class="icon-btn" id="mobileMenuBtn" aria-label="Menüyü Aç">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="3" y1="7" x2="21" y2="7"></line>
+              <line x1="3" y1="17" x2="21" y2="17"></line>
+            </svg>
+          </button>
+          <button class="icon-btn" id="searchTriggerBtn" aria-label="Arama Yap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </div>
+
+        <!-- ORCİK Adaptive Logo -->
+        <a href="#" class="brand-logo-wrap" aria-label="ORCİK Ana Sayfa">
+          <img src="assets/logo-green.png" alt="ORCİK" class="brand-logo-img logo-green">
+          <img src="assets/logo-gold.png" alt="ORCİK" class="brand-logo-img logo-gold">
+        </a>
+
+        <div class="header-right">
+          <!-- Dark / Light Theme Toggle Button -->
+          <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Temayı Değiştir" title="Aydınlık / Karanlık Tema">
+            <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+
+          <a href="#account" class="account-link" id="accountBtn">
+            <span>Giriş Yap</span>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </a>
+          <button class="icon-btn cart-btn" id="cartTriggerBtn" aria-label="Alışveriş Sepeti">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="cart-badge" id="cartCountBadge">0</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Categories Navigation -->
+      <nav class="header-nav" aria-label="Ürün Kategorileri">
+        <ul class="nav-links">
+          <li><a href="#products" class="nav-link active" data-scroll="products">Tüm Lezzetlerimiz</a></li>
+          <li><a href="#yiyecekler" class="nav-link" data-scroll="yiyecekler">Yiyeceklerimiz</a></li>
+          <li><a href="#icecekler" class="nav-link" data-scroll="icecekler">İçeceklerimiz</a></li>
+          <li><a href="orcik-hakkinda.html" class="nav-link">Orcik Hakkında</a></li>
+          <li><a href="biz-kimiz.html" class="nav-link">Biz Kimiz</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================================
+         3. HERO VIDEO SECTION (Otomatik Oynatılan Arka Plan Videosu)
+         ======================================================================== -->
+    <section class="hero-section hero-video-section" id="heroSection">
+      <video class="hero-video-bg" autoplay muted loop playsinline preload="auto">
+        <source src="assets/hero-video.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">Hakiki Elazığ<br><span>Orciki</span> (Cevizli Sucuk)</h1>
+          <p class="hero-subtitle">
+            Doğal Öküzgözü üzüm şırası ve yerli dolgun cevizlerin kazanlarda 3 kat özenle kaynatılıp dinlendirilmesiyle üretilen tescilli Harput mirası.
+          </p>
+          <a href="#products" class="btn-hero">
+            <span>Lezzetleri Keşfet</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         4. PRODUCTS SECTION
+         ======================================================================== -->
+    <section class="section-products" id="products">
+      <div class="container">
+        
+        <!-- YİYECEKLERİMİZ BÖLÜMÜ -->
+        <div class="category-showcase-section" id="yiyecekler">
+          <div class="section-header">
+            <span style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--brand-gold); font-weight: 600;">Gurme Seri</span>
+            <h2 class="section-title section-title--with-logo">
+              <span>Yiyeceklerimiz</span>
+            </h2>
+            <p class="section-desc">
+              Harput'un geleneksel orcik ustalığını modern çikolata, dondurma, bites ve protein barlarla buluşturduğumuz yenilikçi lezzetler.
+            </p>
+          </div>
+          <div class="products-grid" id="yiyeceklerGrid">
+            <!-- Populated dynamically via app.js -->
+          </div>
+        </div>
+
+        <!-- İÇECEKLERİMİZ BÖLÜMÜ -->
+        <div class="category-showcase-section" id="icecekler" style="margin-top: 70px;">
+          <div class="section-header">
+            <span style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--brand-gold); font-weight: 600;">Harput İçecekleri</span>
+            <h2 class="section-title section-title--with-logo">
+              <span>İçeceklerimiz</span>
+            </h2>
+            <p class="section-desc">
+              Taze çiftlik sütü ile karamelize üzüm şırasının birleştiği Orcik Sütü ve taş dibekte dövülen Harput dibek kahvesi.
+            </p>
+          </div>
+          <div class="products-grid" id="iceceklerGrid">
+            <!-- Populated dynamically via app.js -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         5. BRAND STORY & MANIFESTO BANNER
+         ======================================================================== -->
+    <section class="section-story" id="hikayemiz">
+      <div class="story-sketch-bg">
+        <img src="assets/orcik-sketch.png" alt="Orcik Çizimi" class="sketch-watermark-img">
+      </div>
+      <div class="container">
+        <div class="story-container">
+          <h2 class="story-quote">
+            "O orciki Elazığ'da yemek lazım" cümlesini bitiren <span>lezzet mirası.</span>
+          </h2>
+          <p class="story-text">
+            Elazığ'ın asırlık orcik ve pestil kültürü Türkiye'nin en köklü zanaat lezzetlerinden biri; ama gerçek halini bulmak hep zor oldu.
+            <span class="inline-logo-wrap text-logo-wrap" title="ORCİK">
+              <img src="assets/logo-green.png" alt="ORCİK" class="inline-logo logo-green">
+              <img src="assets/logo-gold.png" alt="ORCİK" class="inline-logo logo-gold">
+            </span>,
+            bu eksiği kapatmak ve Harput'un en iyi üreticileriyle kurduğu ortaklıkla gerçek lezzeti yaşatmak için yola çıktı. Bugün Elazığ Merkez'deki mağazamızdan ülkenin her köşesine uzanıyor: hakiki orcik, dut pestili, Şavak tulumu ve yayla balı.
+          </p>
+          <a href="#hikaye-detay" class="btn-story" id="storyDetailsBtn">
+            <span>Hikayemiz</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         6. CURATED PACKAGES / DARK SHOWCASE CARDS
+         ======================================================================== -->
+    <section class="section-packages" id="paketler">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Özel Gurme Koleksiyonu</h2>
+          <p class="section-desc">Elazığ ve Harput bağlarının geleneksel üretim teknikleriyle hazırlanan seçkin lezzetler.</p>
+        </div>
+
+        <div class="packages-grid" id="packagesGrid">
+          <!-- Populated dynamically via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         7. VALUE PROPOSITIONS & TRUST BADGES
+         ======================================================================== -->
+    <section class="section-features">
+      <div class="container">
+        <h2 class="features-title">Elazığ'daki mağazamızdan kapınıza kadar taze kalır.</h2>
+        
+        <div class="features-grid">
+          <!-- 1. Hızlı Teslimat -->
+          <div class="feature-item">
+            <div class="feature-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+            </div>
+            <h3 class="feature-name">Hızlı ve Güvenli Teslimat</h3>
+            <p class="feature-desc">Siparişiniz alındığı anda taze paketlenir ve en geç 2 iş günü içinde yola çıkar.</p>
+          </div>
+
+          <!-- 2. Coğrafi İşaretli Orijinal Ürünler -->
+          <div class="feature-item">
+            <div class="feature-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+            </div>
+            <h3 class="feature-name">Orijinal Elazığ & Harput Ürünleri</h3>
+            <p class="feature-desc">Harput bağlarının Öküzgözü üzüm şırası ve yerli cevizleriyle geleneksel yöntemlerle üretilir.</p>
+          </div>
+
+          <!-- 3. Soğuk Zincir & Koruyucu Ambalaj -->
+          <div class="feature-item">
+            <div class="feature-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="2" x2="12" y2="22"></line>
+                <line x1="17" y1="5" x2="7" y2="19"></line>
+                <line x1="22" y1="12" x2="2" y2="12"></line>
+                <line x1="17" y1="19" x2="7" y2="5"></line>
+              </svg>
+            </div>
+            <h3 class="feature-name">Özel Koruyucu & Soğuk Zincir</h3>
+            <p class="feature-desc">Özel vakumlu paketler, strafor kutu ve buz aküsüyle tazeliği kapınıza ulaşana kadar korunur.</p>
+          </div>
+
+          <!-- 4. İade Garantisi -->
+          <div class="feature-item">
+            <div class="feature-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+              </svg>
+            </div>
+            <h3 class="feature-name">Beğenmezseniz Ödemeniz İade</h3>
+            <p class="feature-desc">Ürününüz elinize ulaştığında beklediğiniz gibi değilse WhatsApp'tan yazmanız yeterli.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       8. SITE FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/logo-gold.png" alt="ORCİK" class="footer-logo-img">
+          <p class="footer-tagline">
+            Elazığ ve Harput'un asırlık orcik, pestil ve yayla lezzetlerini en saf haliyle sofranıza taşıyoruz. Doğrudan kaynağından, güvenle.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Kategoriler</h4>
+          <ul class="footer-links">
+            <li><a href="#products">Hakiki Elazığ Orciki</a></li>
+            <li><a href="#products">Şavak Tulum Peyniri</a></li>
+            <li><a href="#products">Dut Pestili & Köme</a></li>
+            <li><a href="#products">Ağın Kum Leblebisi</a></li>
+            <li><a href="#products">Gurme Sandıklar</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Kurumsal</h4>
+          <ul class="footer-links">
+            <li><a href="#hikayemiz">Hikayemiz</a></li>
+            <li><a href="#">Elazığ Mağazamız</a></li>
+            <li><a href="#">Sıkça Sorulan Sorular</a></li>
+            <li><a href="#">Mesafeli Satış Sözleşmesi</a></li>
+            <li><a href="#">İade ve İptal Şartları</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">E-Bülten</h4>
+          <p style="font-size: 13.5px; opacity: 0.8; margin-bottom: 14px;">Yeni mahsul orciklerden ve özel fırsatlardan ilk siz haberdar olun.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <div class="newsletter-input-group">
+              <input type="email" class="newsletter-input" placeholder="E-posta adresiniz" required>
+              <button type="submit" class="newsletter-submit">Kayıt Ol</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 ORCİK Yöresel Gıda A.Ş. Tüm hakları saklıdır.</div>
+        <div>Tasarım & Geliştirme: ORCİK Studio</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       9. SLIDE-IN CART DRAWER
+       ======================================================================== -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Alışveriş Sepeti">
+    <div class="drawer-header">
+      <h3 class="drawer-title">Sepetiniz</h3>
+      <button class="drawer-close" id="drawerCloseBtn" aria-label="Sepeti Kapat">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <!-- Free Shipping Progress -->
+    <div class="shipping-progress-box">
+      <div class="shipping-progress-text" id="shippingProgressText">1.500 TL üzeri kargo ücretsiz!</div>
+      <div class="shipping-bar-bg">
+        <div class="shipping-bar-fill" id="shippingBarFill"></div>
+      </div>
+    </div>
+
+    <!-- Cart Items -->
+    <div class="cart-items-container" id="cartItemsList">
+      <!-- Populated dynamically -->
+    </div>
+
+    <!-- Drawer Footer -->
+    <div class="drawer-footer">
+      <div class="drawer-subtotal">
+        <span class="subtotal-label">Ara Toplam:</span>
+        <span class="subtotal-value" id="cartSubtotal">₺ 0.00</span>
+      </div>
+      <button class="checkout-btn" id="checkoutBtn">
+        <span>Siparişi Tamamla</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       10. SEARCH MODAL OVERLAY
+       ======================================================================== -->
+  <div class="search-modal" id="searchModal">
+    <div class="search-container">
+      <div class="search-input-header">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" class="search-input-field" id="searchInput" placeholder="Orcik, tulum peyniri veya pestil arayın..." autocomplete="off">
+        <button class="icon-btn" id="searchCloseBtn" aria-label="Aramayı Kapat">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="search-results-list" id="searchResultsList">
+        <!-- Live search results -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       11. LIVE RECENT PURCHASE POPUP (Social Proof)
+       ======================================================================== -->
+  <div class="purchase-toast" id="purchaseToast">
+    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=150&q=80" alt="Ürün" class="toast-img" id="toastImg">
+    <div class="toast-content">
+      <div class="toast-user" id="toastUser">Mehmet A. · İstanbul</div>
+      <div class="toast-title" id="toastProduct">Hakiki Elazığ Orciki (Cevizli Sucuk)</div>
+      <div class="toast-time" id="toastTime">2 dakika önce satın aldı</div>
+    </div>
+    <span class="toast-close" id="toastCloseBtn">&times;</span>
+  </div>
+
+  <!-- Notification Toast -->
+  <div class="app-toast" id="appToast">Ürün sepete eklendi!</div>
+
+  <!-- Scripts -->
+  <script src="js/products.js?v=orcik7"></script>
+  <script src="js/app.js?v=orcik7"></script>
+</body>
+</html>
